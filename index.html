@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TopTelhados - Construção e Reforma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    header { background: #c0392b; color: white; padding: 1rem 2rem; text-align: center; }
+    nav { margin-top: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; max-width: 1000px; margin: auto; }
+    h2 { color: #c0392b; margin-bottom: 1rem; }
+    .services, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    footer { background: #333; color: white; text-align: center; padding: 1rem; }
+    form input, form textarea { width: 100%; padding: 10px; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #c0392b; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TopTelhados</h1>
+  <p>Construção e Reforma de Telhados</p>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="sobre">
+  <h2>Sobre Nós</h2>
+  <p>Com mais de 15 anos de experiência, a TopTelhados é referência em serviços de construção, manutenção e reforma de telhados residenciais e comerciais. Garantimos qualidade, segurança e compromisso com o cliente.</p>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Construção de Telhados</h3>
+      <p>Projetos personalizados para residências e empresas, com materiais de alta qualidade e equipe especializada.</p>
+    </div>
+    <div class="card">
+      <h3>Reforma de Telhados</h3>
+      <p>Reformas completas para telhados danificados ou antigos, incluindo substituição de telhas e estruturas.</p>
+    </div>
+    <div class="card">
+      <h3>Manutenção Preventiva</h3>
+      <p>Inspeções periódicas e manutenção preventiva para evitar infiltrações, vazamentos e danos estruturais.</p>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <h2>Depoimentos</h2>
+  <div class="testimonials">
+    <div class="card">
+      <p>"Excelente atendimento! Entregaram tudo antes do prazo e com um acabamento impecável."</p>
+      <strong>- João Silva</strong>
+    </div>
+    <div class="card">
+      <p>"Serviço de qualidade e preço justo. Recomendo sem dúvidas."</p>
+      <strong>- Maria Oliveira</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Fale Conosco</h2>
+  <form>
+    <input type="text" placeholder="Seu nome" required />
+    <input type="email" placeholder="Seu e-mail" required />
+    <textarea rows="5" placeholder="Sua mensagem..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 TopTelhados - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
